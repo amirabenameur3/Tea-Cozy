@@ -1,211 +1,213 @@
 /* Universal Styles */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-    font-family: "Helvetica", sans-serif;
-    font-size: 16px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
 }
 
 body {
-    background-color: black;
-    color: seashell;
-    margin:0;
+  background-color: black;
+  color: seashell;
+  margin:0;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .main-content {
-    position: relative;
-    padding-top: 4.3125rem;
-}
-
-* {
-    box-sizing: border-box;
+  position: relative;
+  padding-top: 4.3125rem;
 }
 
 footer {
-    text-align: left;
+  text-align: left;
 }
 
 /* Header */
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  border-bottom: solid 1px seashell;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+border-bottom: solid 1px seashell;
 }
 
 header .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4.3125rem;
+  padding: 0.5rem 0;
 }
 
 header .logo {
-    padding-left: 0.625rem;
-    display: inline-flex;
+  padding-left: 0.625rem;
+  display: inline-flex;
 }
 
 header .logo img {
-    height: 3.125rem;
-    width: auto;
-    display: block;
+  display: block;
+  height: 3.125rem;
+  width: auto;
 }
 
 header nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-    padding-left: 0.75rem;
-    padding-right: 1.375rem;
+  padding: 0 1rem;
 }
 
 nav a {
-    font-size: 1.375rem;
-    color: seashell;
-    text-decoration: underline;
+  font-size: 1.375rem;
+  color: seashell;
+  text-decoration: underline;
 }
 
 nav a:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 /* section 1 */
 
 #mission {
-    display: flex;
-    align-items: center;
-    height: 43.75rem;
-    max-width: 75rem;   /* 1200px */
-    width: 100%;
-    margin: 0 auto;
-    background-image: url("../images/img-mission-background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 43.75rem;
+  max-width: 75rem;   /* 1200px */
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../images/img-mission-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .mission-content {
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    padding: 0.625rem 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 0.75rem 0;
 }
 
 .mission-content h2 {
-    padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .mission-content h2, 
 .mission-content h4 {
-    margin: 0;
+  margin: 0;
 }
 
 /* section 2 */
 
 #featured {
-    padding: 4rem 0;
+  padding: 4rem 1rem;
 }
 
 .feature {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 62.5rem;
-    width: 100%;
-    gap: 2rem;
-    margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 62.5rem;
+  width: 100%;
+  gap: 2rem;
+  margin: 1rem auto 0;
 }
 
 .tea-item {
-    text-align: center;
+  text-align: center;
 }
 
 .feature .image-container {
-    width: 18.75rem;
-    height: 12.5rem;
-    overflow: hidden;
+  width: 18.75rem;
+  height: 12.5rem;
+  overflow: hidden;
 }
 
 .feature .image-container img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;       
-  display: block;
 }
 
 .tea-item h4 {
-    margin-top: 0.625rem;
+  margin-top: 0.75rem 0 0;
 }
 
 /* section 3 */
 
 #locations {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-
-    height: 31.25rem;
-    max-width: 75rem;   /* 1200px */
-    width: 100%;
-    margin: 0 auto;
-
-    column-gap: 2.5rem;
-    row-gap: 0.9375rem;
-
-    background-image: url("../images/img-locations-background.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 31.25rem;
+  max-width: 75rem;   /* 1200px */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  column-gap: 2.5rem;
+  row-gap: 1rem;
+  background-image: url("../images/img-locations-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .locations-title {
   flex: 0 0 100%;
-  text-align: center;
-  margin: 0;       
+  margin: 0 0 1rem;
+  text-align: center;       
 }
 
 .square {
-    width: 18.75rem;
-    background-color: black;
-    opacity: 1;
-    color: seashell;
-    text-align: center;
+  width: 18.75rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: black;
+  color: seashell;
+  opacity: 1;
 }
 
 #locations h4 {
-    margin: 2rem 0 0;
+  margin: 1.5rem 0 0;
 }
 
 .location-address {
-    padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 #specific {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 /* section 4 */
 
+.content.center:last-of-type {
+  padding: 1.5rem 1rem 2rem;
+}
+
 .content.center .email {
-    padding-top: 1rem;
+  padding-top: 1rem;
 } 
 
 /* Footer */
 
-footer .content .copyright {
-    padding-left: 1.25rem;
-    padding-bottom: 2rem;
+footer .content {
+  padding: 1rem 1.25rem 2rem;
 }
 
 /* Tablet layout (≤ 1024px) */
@@ -225,7 +227,7 @@ footer .content .copyright {
 
   /* Locations */
   #locations {
-    height: auto;
+    min-height: auto;
     padding: 3rem 1rem;
   }
 
@@ -239,7 +241,6 @@ footer .content .copyright {
 @media (max-width: 768px) {
 
 .main-content {
-    position: relative;
     padding-top: 0;
 }
 
@@ -249,18 +250,23 @@ header {
   }
 
   header .content {
-    flex-direction: row;
-    height: auto;
-    padding: 0.5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  header .logo {
+    padding-left: 0;
   }
 
   nav ul {
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   nav li {
-    padding: 0.5rem 0.5rem;
+    padding: 0.25rem 0.75rem;
   }
 
   nav a {
@@ -273,19 +279,23 @@ header {
   }
 
   .mission-content h2 {
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
+  }
+
+  .mission-content h4 {
+    line-height: 1.5;
   }
 
   /* Featured Tea */
 
   #featured {
-    padding: 1rem 0 0;
+    padding: 2rem 1rem;
     }
 
   .feature {
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 1.5rem;
   }
 
   .tea-item {
@@ -295,7 +305,7 @@ header {
 
   .feature .image-container {
     width: 100%;
-    max-width: none;
+    max-width: 20rem;
   }
 
   .tea-item h4 {
@@ -322,5 +332,10 @@ header {
   /* Footer */
   footer {
     text-align: center;
+  }
+
+  footer .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
