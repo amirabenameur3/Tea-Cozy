@@ -6,7 +6,7 @@ Responsive landing page for a fictional tea shop built with **HTML and CSS** as 
 
 ## 📸 Preview
 
-![Tea Cozy Preview](docs/tea-cozy-preview.png)
+![Tea Cozy Preview](docs/Tea_cozy_preview.png)
 
 ---
 
