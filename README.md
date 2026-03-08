@@ -6,7 +6,7 @@ Responsive landing page for a fictional tea shop built with **HTML and CSS** as 
 
 ## 📸 Preview
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://amirabenameur3.github.io/Tea_Cozy/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge&logo=github)](https://amirabenameur3.github.io/Tea-Cozy/)
 
 ![Tea Cozy Preview](docs/Tea_cozy_preview.png)
 
@@ -14,7 +14,7 @@ Responsive landing page for a fictional tea shop built with **HTML and CSS** as 
 
 ## 🌐 Live Demo
 
-https://amirabenameur3.github.io/Tea_Cozy/
+https://amirabenameur3.github.io/Tea-Cozy/
 
 ---
 
