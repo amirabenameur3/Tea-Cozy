@@ -7,12 +7,17 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: black;
   color: seashell;
   margin:0;
+}
+
+h2 {
+  letter-spacing: 0.03em;
 }
 
 .center {
@@ -78,10 +83,12 @@ nav a {
   font-size: 1.375rem;
   color: seashell;
   text-decoration: underline;
+  transition: opacity 0.25s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
+  transform: translateY(-1px);
 }
 
 /* Mission Section */
@@ -141,6 +148,15 @@ nav a:hover {
 
 .tea-item {
   text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tea-item:hover {
+  transform: translateY(-6px);
+}
+
+.tea-item:hover img {
+  transform: scale(1.05);
 }
 
 .feature .image-container {
@@ -153,7 +169,8 @@ nav a:hover {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;       
+  object-fit: cover; 
+  transition: transform 0.35s ease;      
 }
 
 .tea-item h3 {
@@ -192,7 +209,12 @@ nav a:hover {
   text-align: center;
   background-color: black;
   color: seashell;
-  opacity: 1;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.25s ease;
+}
+
+.square:hover {
+  transform: translateY(-4px);
 }
 
 .square h3 {
