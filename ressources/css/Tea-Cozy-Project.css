@@ -24,6 +24,10 @@ body {
   padding-top: 4.3125rem;
 }
 
+address {
+  font-style: normal;
+}
+
 footer {
   text-align: left;
 }
@@ -31,12 +35,13 @@ footer {
 /* Header */
 
 header {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 100;
-border-bottom: solid 1px seashell;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: solid 1px seashell;
+  background-color: black;
 }
 
 header .content {
@@ -79,7 +84,7 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* section 1 */
+/* Mission Section */
 
 #mission {
   display: flex;
@@ -102,18 +107,26 @@ nav a:hover {
 }
 
 .mission-content h2 {
+  margin: 0;
   padding-bottom: 1rem;
 }
 
-.mission-content h2, 
-.mission-content h4 {
+.mission-content p{
   margin: 0;
 }
 
-/* section 2 */
+/* Featured Tea Section */
 
 #featured {
   padding: 4rem 1rem;
+}
+
+#featured .header h2 {
+  margin: 0;
+}
+
+#featured .subtitle {
+  margin: 1rem 0 0;
 }
 
 .feature {
@@ -143,11 +156,11 @@ nav a:hover {
   object-fit: cover;       
 }
 
-.tea-item h4 {
-  margin-top: 0.75rem 0 0;
+.tea-item h3 {
+  margin: 0.75rem 0 0;
 }
 
-/* section 3 */
+/* Locations Section */
 
 #locations {
   display: flex;
@@ -182,7 +195,11 @@ nav a:hover {
   opacity: 1;
 }
 
-#locations h4 {
+.square h3 {
+  margin: 1.5rem 0 0;
+}
+
+.square address p {
   margin: 1.5rem 0 0;
 }
 
@@ -194,15 +211,23 @@ nav a:hover {
   border: 1px solid red;
 }
 
-/* section 4 */
+/* Contact Section */
 
-.content.center:last-of-type {
+.content {
   padding: 1.5rem 1rem 2rem;
 }
 
-.content.center .email {
+.contact h2 {
+  margin: 0;
+}
+
+.contact .email {
   padding-top: 1rem;
-} 
+}
+
+.contact p {
+  margin: 0.75rem 0 0;
+}
 
 /* Footer */
 
@@ -239,13 +264,14 @@ footer .content {
 /* Mobile layout (≤ 768px) */
 
 @media (max-width: 768px) {
-
-.main-content {
+  
+  .main-content {
     padding-top: 0;
-}
+  }
 
   /* Header */
-header {
+  
+  header {
     position: static;
   }
 
@@ -282,12 +308,12 @@ header {
     padding: 0.5rem 0;
   }
 
-  .mission-content h4 {
-    line-height: 1.5;
+  .mission-content p {
+    line-height: 1.6;
+    margin: 0;
   }
 
   /* Featured Tea */
-
   #featured {
     padding: 2rem 1rem;
     }
@@ -306,12 +332,12 @@ header {
   .feature .image-container {
     width: 100%;
     max-width: 20rem;
+    margin: 0 auto;
   }
 
-  .tea-item h4 {
+  .tea-item h3 {
     text-align: center;
 }
-
 
   /* Locations */
   #locations {
