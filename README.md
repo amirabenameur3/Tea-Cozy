@@ -4,13 +4,18 @@
 
 ![Tea Cozy Preview](docs/Tea_cozy_preview.png)
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/HTML5-Structure-E34F26?logo=html5&logoColor=white" alt="HTML5 Badge">
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white" alt="CSS3 Badge">
   <img src="https://img.shields.io/badge/Flexbox-Layout-blue" alt="Flexbox Badge">
   <img src="https://img.shields.io/badge/Responsive-Design-38bdf8" alt="Responsive Badge">
   <img src="https://img.shields.io/badge/GitHub-Project-181717?logo=github" alt="GitHub Badge">
   <img src="https://img.shields.io/badge/Status-Portfolio%20Project-purple" alt="Status Badge">
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/github/repo-size/amirabenameur3/PixelShadows_Studios" alt="Repo Size">
+  <img src="https://img.shields.io/github/last-commit/amirabenameur3/PixelShadows_Studios" alt="Last Commit">
 </p>
 
 ---
