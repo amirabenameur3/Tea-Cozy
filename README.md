@@ -32,9 +32,9 @@
 
 This project recreates a fictional tea shop website called **Tea Cozy**.
 
-The goal is to build a fully styled web page based on a design specification provided by Codecademy. The exercise focuses on practicing **HTML structure, CSS styling, and layout techniques using Flexbox**. :contentReference[oaicite:1]{index=1}
+The goal of this project is to build a fully styled web page based on a design specification provided by Codecademy. It focuses on practicing **HTML structure, CSS styling, and layout techniques using Flexbox**.
 
-The site presents a tea shop’s mission, featured teas, and store locations through a clean layout and imagery.
+The website showcases a fictional tea shop’s mission, featured teas, and store locations through a clean, structured, and visually engaging layout.
 
 ---
 
