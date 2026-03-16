@@ -85,8 +85,6 @@ Contains contact and branding information.
 
 ## 📁 Project Structure
 
----
-
 ```
 Tea-Cozy
 │
