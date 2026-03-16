@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/Tea_cozy_preview.gif" width="900" alt="Tea Cozy website preview">
+  <img src="./docs/Tea_cozy_preview.png" width="900" alt="Tea Cozy website preview">
 </p>
 
 <h1 align="center">🍵 Tea Cozy</h1>
@@ -84,6 +84,8 @@ Contains contact and branding information.
 ---
 
 ## 📁 Project Structure
+
+---
 
 ```
 Tea-Cozy
