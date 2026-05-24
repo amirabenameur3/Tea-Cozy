@@ -5,7 +5,7 @@
 <h1 align="center">🍵 Tea Cozy</h1>
 
 <p align="center">
-  A fictional tea shop website built as part of the Codecademy HTML & CSS learning projects.
+  A modern fictional tea shop website built as part of the Codecademy HTML & CSS learning projects.
 </p>
 
 <p align="center">
@@ -13,18 +13,20 @@
   <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/Flexbox-Layout-blue">
   <img src="https://img.shields.io/badge/Responsive-Design-38bdf8">
+  <img src="https://img.shields.io/badge/UI%2FUX-Polished-purple">
   <img src="https://img.shields.io/badge/GitHub-Project-181717?logo=github">
-  <img src="https://img.shields.io/badge/Status-Portfolio%20Project-purple">
+  <img src="https://img.shields.io/badge/Status-Portfolio%20Project-success">
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/amirabenameur3/Tea-Cozy">
   <img src="https://img.shields.io/github/last-commit/amirabenameur3/Tea-Cozy">
+  <img src="https://img.shields.io/github/languages/top/amirabenameur3/Tea-Cozy">
 </p>
 
 <p align="center">
   <a href="https://amirabenameur3.github.io/Tea-Cozy/">
-  <img src="https://img.shields.io/badge/🌐-Live%20Demo-38bdf8?style=for-the-badge">
+    <img src="https://img.shields.io/badge/🌐-Live%20Demo-38bdf8?style=for-the-badge">
   </a>
 </p>
 
@@ -32,23 +34,53 @@
 
 ## 📖 Project Overview
 
-This project recreates a fictional tea shop website called **Tea Cozy**.
+**Tea Cozy** is a fictional tea shop landing page inspired by a Codecademy front-end development project.
 
-The goal of this project is to build a fully styled web page based on a design specification provided by Codecademy. It focuses on practicing **HTML structure, CSS styling, and layout techniques using Flexbox**.
+The objective of this project was to recreate a fully styled website from a design specification while practicing:
 
-The website showcases a fictional tea shop’s mission, featured teas, and store locations through a clean, structured, and visually engaging layout.
+- Semantic HTML structure
+- CSS styling techniques
+- Flexbox layouts
+- Responsive web design principles
+- Project organization using Git & GitHub
+
+The website presents the identity of a fictional tea company through visually structured sections featuring a mission statement, featured teas, and store locations.
+
+---
+
+## 🌐 Live Demo
+
+You can explore the live version of the website here:
+
+🔗 https://amirabenameur3.github.io/Tea-Cozy/
+
+Deployed with **GitHub Pages**
 
 ---
 
 ## ✨ Features
 
-- Fixed navigation header
-- Flexbox-based layout
-- Product showcase section
-- Location cards
-- Background images
-- Clean typography
-- Responsive-friendly structure
+- Sticky navigation header
+- Responsive Flexbox layouts
+- Featured tea showcase
+- Location cards with overlay styling
+- Full-width hero banner
+- Background imagery integration
+- Clean typography hierarchy
+- Reusable utility classes
+- Organized project structure
+- GitHub Pages deployment
+
+---
+
+## 🎨 Highlights
+
+- Improved visual polish and spacing system
+- Better responsive behavior across screen sizes
+- Refined card layouts and alignment
+- Consistent section structure
+- Cleaner CSS organization and maintainability
+- Portfolio-ready presentation
 
 ---
 
@@ -71,17 +103,20 @@ The website showcases a fictional tea shop’s mission, featured teas, and store
 
 ## 📸 Website Sections
 
-### Hero / Mission Section
-Highlights the tea shop philosophy and branding.
+### 🌿 Mission Section
+Introduces the tea shop philosophy with a large hero-style banner.
 
-### Featured Tea
-Displays the tea products of the month with images.
+### 🍵 Featured Tea
+Displays tea products of the month using responsive image cards.
 
-### Locations
-Shows multiple shop locations using card-style layout.
+### 📍 Locations
+Presents store locations with styled overlay cards.
 
-### Footer
-Contains contact and branding information.
+### 📞 Contact Section
+Provides branding and contact information.
+
+### 🦶 Footer
+Contains copyright information.
 
 ---
 
@@ -110,24 +145,29 @@ Tea-Cozy
 
 ## 🧠 What I Learned
 
-While building this project I practiced:
+Through this project, I practiced:
 
-- Structuring HTML layouts
-- Using **Flexbox for page layout**
-- Styling responsive web components
-- Organizing assets in a real project structure
-- Managing projects with **Git and GitHub**
+- Building structured web layouts
+- Creating responsive sections using Flexbox
+- Managing spacing and alignment systems
+- Organizing CSS for readability
+- Working with reusable styles
+- Improving visual consistency
+- Deploying static websites with GitHub Pages
+- Using Git branches and commits for workflow management
 
 ---
 
 ## 🚀 Future Improvements
 
-Possible improvements for this project:
+Potential future upgrades include:
 
-- Improve mobile responsiveness
-- Add animations and transitions
-- Enhance accessibility
-- Add interactive elements with JavaScript
+- Adding JavaScript interactivity
+- Implementing animations and transitions
+- Enhancing accessibility (ARIA & keyboard navigation)
+- Improving mobile navigation experience
+- Adding dark/light theme support
+- Optimizing images and performance
 
 ---
 
@@ -135,22 +175,26 @@ Possible improvements for this project:
 
 **Amira Ben Ameur**
 
-PhD researcher in Structural & Transportation Engineering  
-Front-End Development learner
+PhD Researcher in Structural & Transportation Engineering  
+Front-End Development Learner
 
-GitHub  
+GitHub:  
 https://github.com/amirabenameur3
 
 ---
 
 ## 📌 Disclaimer
 
-This website represents a **fictional tea shop website** created for **learning and portfolio purposes**.
+This project represents a **fictional tea shop website** created for:
 
-It does **not represent a real company or brand**.
+- Learning purposes
+- Front-end practice
+- Portfolio presentation
+
+It does **not represent a real business or commercial brand**.
 
 ---
 
-## ⭐ If you like the project
+## ⭐ Support
 
-Consider giving the repository a **star on GitHub** ⭐
+If you enjoyed this project or found it inspiring, consider giving the repository a **star on GitHub** ⭐
