@@ -1,4 +1,27 @@
-/* Universal Styles */
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --bg-primary: #000;
+  --text-primary: seashell;
+
+  --border-light: rgba(255, 245, 238, 0.15);
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+
+  --shadow-hover: 0 0.75rem 1.5rem rgba(255, 245, 238, 0.12);
+
+  --transition-fast: 0.25s ease;
+  --transition-medium: 0.35s ease;
+}
+
+/* =========================
+   UNIVERSAL STYLES
+========================= */
 
 * {
   box-sizing: border-box;
@@ -11,9 +34,24 @@ html {
 }
 
 body {
-  background-color: black;
-  color: seashell;
-  margin:0;
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  opacity: 0.9;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 4px;
 }
 
 h2 {
@@ -37,16 +75,18 @@ footer {
   text-align: left;
 }
 
-/* Header */
+/* =========================
+   HEADER
+========================= */
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 100;
-  border-bottom: solid 1px seashell;
-  background-color: black;
+  width: 100%;
+  border-bottom: solid 1px var(--text-primary);
+  background-color: var(--bg-primary);
 }
 
 header .content {
@@ -54,44 +94,45 @@ header .content {
   align-items: center;
   justify-content: space-between;
   min-height: 4.3125rem;
-  padding: 0.5rem 0;
+  padding: var(--space-xs) 0;
 }
 
 header .logo {
-  padding-left: 0.625rem;
   display: inline-flex;
+  padding-left: 0.625rem;
 }
 
 header .logo img {
-  display: block;
   height: 3.125rem;
   width: auto;
 }
 
-header nav ul {
+header .main-nav ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
-  padding: 0 1rem;
+.main-nav li {
+  padding: 0 var(--space-sm);
 }
 
-nav a {
+.main-nav a {
   font-size: 1.375rem;
-  color: seashell;
+  color: var(--text-primary);
   text-decoration: underline;
-  transition: opacity 0.25s ease, transform 0.2s ease;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
-nav a:hover {
+.main-nav a:hover {
   opacity: 0.7;
   transform: translateY(-1px);
 }
 
-/* Mission Section */
+/* =========================
+   MISSION SECTION
+========================= */
 
 #mission {
   display: flex;
@@ -108,24 +149,26 @@ nav a:hover {
 
 .mission-content {
   width: 100%;
-  background-color: black;
-  text-align: center;
   padding: 0.75rem 0;
+  background-color: var(--bg-primary);
+  text-align: center;
 }
 
 .mission-content h2 {
   margin: 0;
-  padding-bottom: 1rem;
+  padding-bottom: var(--space-sm);
 }
 
-.mission-content p{
+.mission-content p {
   margin: 0;
 }
 
-/* Featured Tea Section */
+/* =========================
+   FEATURED TEA SECTION
+========================= */
 
 #featured {
-  padding: 4rem 1rem;
+  padding: var(--space-lg) var(--space-sm);
 }
 
 #featured .header h2 {
@@ -133,51 +176,53 @@ nav a:hover {
 }
 
 #featured .subtitle {
-  margin: 1rem 0 0;
+  margin: var(--space-sm) 0 0;
 }
 
-.feature {
+.featured-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 62.5rem;
   width: 100%;
-  gap: 2rem;
-  margin: 1rem auto 0;
+  gap: var(--space-md);
+  margin: var(--space-sm) auto 0;
 }
 
 .tea-item {
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .tea-item:hover {
   transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
 }
 
 .tea-item:hover img {
   transform: scale(1.05);
 }
 
-.feature .image-container {
+.featured-grid .image-container {
   width: 18.75rem;
   height: 12.5rem;
   overflow: hidden;
 }
 
-.feature .image-container img {
-  display: block;
+.featured-grid .image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  transition: transform 0.35s ease;      
+  transition: transform var(--transition-medium);      
 }
 
 .tea-item h3 {
   margin: 0.75rem 0 0;
 }
 
-/* Locations Section */
+/* =========================
+   LOCATIONS SECTION
+========================= */
 
 #locations {
   display: flex;
@@ -188,9 +233,9 @@ nav a:hover {
   max-width: 75rem;   /* 1200px */
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: var(--space-md) var(--space-sm);
   column-gap: 2.5rem;
-  row-gap: 1rem;
+  row-gap: var(--space-sm);
   background-image: url("../images/img-locations-background.jpg");
   background-position: center;
   background-size: cover;
@@ -199,22 +244,25 @@ nav a:hover {
 
 .locations-title {
   flex: 0 0 100%;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--space-sm);
   text-align: center;       
 }
 
 .square {
   width: 18.75rem;
-  padding: 1rem;
+  padding: var(--space-sm);
   text-align: center;
-  background-color: black;
-  color: seashell;
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: transform 0.25s ease;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .square:hover {
   transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .square h3 {
@@ -226,38 +274,41 @@ nav a:hover {
 }
 
 .location-address {
-  padding-bottom: 0.5rem;
+  padding-bottom: var(--space-xs);
 }
 
-#specific {
-  border: 1px solid red;
-}
-
-/* Contact Section */
+/* =========================
+   CONTACT SECTION
+========================= */
 
 .content {
-  padding: 1.5rem 1rem 2rem;
+  padding: 1.5rem var(--space-sm) var(--space-md);
 }
 
 .contact h2 {
   margin: 0;
 }
 
-.contact .email {
-  padding-top: 1rem;
+.contact a {
+  display: block;
+  margin-top: 0.75rem;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
 }
 
-.contact p {
-  margin: 0.75rem 0 0;
+.contact a:hover {
+  opacity: 0.7;
 }
 
 /* Footer */
 
 footer .content {
-  padding: 1rem 1.25rem 2rem;
+  padding: var(--space-sm) 1.25rem var(--space-md);
 }
 
-/* Tablet layout (≤ 1024px) */
+/* =========================
+   TABLET LAYOUT ≤ 1024px
+========================= */
 
 @media (max-width: 1024px) {
 
@@ -267,15 +318,15 @@ footer .content {
   }
 
   /* Featured tea */
-  .feature {
+  .featured-grid {
     max-width: 100%;
     gap: 1.5rem;
   }
 
   /* Locations */
   #locations {
-    min-height: auto;
-    padding: 3rem 1rem;
+    min-height: unset;
+    padding: 3rem var(--space-sm);
   }
 
   .square {
@@ -283,7 +334,9 @@ footer .content {
   }
 }
 
-/* Mobile layout (≤ 768px) */
+/* =========================
+   MOBILE LAYOUT ≤ 768px
+========================= */
 
 @media (max-width: 768px) {
   
@@ -301,23 +354,23 @@ footer .content {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.75rem;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem var(--space-sm);
   }
 
   header .logo {
     padding-left: 0;
   }
 
-  nav ul {
+  .main-nav ul {
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  nav li {
+  .main-nav li {
     padding: 0.25rem 0.75rem;
   }
 
-  nav a {
+  .main-nav a {
     font-size: 1rem;
   }
 
@@ -327,7 +380,7 @@ footer .content {
   }
 
   .mission-content h2 {
-    padding: 0.5rem 0;
+    padding: var(--space-xs) 0;
   }
 
   .mission-content p {
@@ -337,10 +390,10 @@ footer .content {
 
   /* Featured Tea */
   #featured {
-    padding: 2rem 1rem;
+    padding: var(--space-md) var(--space-sm);
     }
 
-  .feature {
+  .featured-grid {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -351,7 +404,7 @@ footer .content {
     margin: 0 auto;
   }
 
-  .feature .image-container {
+  .featured-grid .image-container {
     width: 100%;
     max-width: 20rem;
     margin: 0 auto;
@@ -359,17 +412,17 @@ footer .content {
 
   .tea-item h3 {
     text-align: center;
-}
+  }
 
   /* Locations */
   #locations {
     flex-direction: column;
     align-content: center;
-    padding: 2rem 1rem;
+    padding: var(--space-md) var(--space-sm);
   }
 
   .locations-title {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-sm);
   }
 
   .square {
@@ -383,7 +436,7 @@ footer .content {
   }
 
   footer .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
   }
 }
